@@ -1,158 +1,323 @@
 {
-    "type": "FeatureCollection",
-    "features": [
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Reported ash-affected corridor — Indonesia",
-                "coverage_type": "ash_affected",
-                "regions": [
-                    "Bengkulu",
-                    "Lampung",
-                    "Banten",
-                    "DKI Jakarta",
-                    "Jawa Barat"
-                ],
-                "note": "Approximate analytical corridor representing reported ash-affected parts of Indonesia. It is not an official administrative boundary."
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            102.45,
-                            -5.1
-                        ],
-                        [
-                            103.25,
-                            -5.45
-                        ],
-                        [
-                            104.15,
-                            -5.35
-                        ],
-                        [
-                            104.95,
-                            -5.5
-                        ],
-                        [
-                            105.45,
-                            -5.25
-                        ],
-                        [
-                            106.1,
-                            -5.35
-                        ],
-                        [
-                            106.85,
-                            -5.55
-                        ],
-                        [
-                            107.65,
-                            -5.55
-                        ],
-                        [
-                            107.8,
-                            -6.15
-                        ],
-                        [
-                            107.2,
-                            -6.65
-                        ],
-                        [
-                            106.35,
-                            -6.75
-                        ],
-                        [
-                            105.5,
-                            -6.8
-                        ],
-                        [
-                            104.75,
-                            -7.0
-                        ],
-                        [
-                            103.95,
-                            -6.9
-                        ],
-                        [
-                            103.15,
-                            -6.7
-                        ],
-                        [
-                            102.6,
-                            -6.3
-                        ],
-                        [
-                            102.45,
-                            -5.1
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Higher-level ash monitoring area — offshore",
-                "coverage_type": "higher_level_monitoring",
-                "note": "Approximate offshore sector reflecting BMKG reporting of higher-level ash extending farther west/southwest. This visualization is analytical and not an official ash concentration boundary."
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            98.2,
-                            -4.65
-                        ],
-                        [
-                            99.55,
-                            -4.55
-                        ],
-                        [
-                            101.1,
-                            -4.75
-                        ],
-                        [
-                            102.7,
-                            -4.95
-                        ],
-                        [
-                            103.7,
-                            -5.25
-                        ],
-                        [
-                            104.1,
-                            -5.9
-                        ],
-                        [
-                            103.4,
-                            -6.6
-                        ],
-                        [
-                            102.2,
-                            -7.0
-                        ],
-                        [
-                            100.9,
-                            -7.0
-                        ],
-                        [
-                            99.6,
-                            -6.55
-                        ],
-                        [
-                            98.55,
-                            -5.75
-                        ],
-                        [
-                            98.2,
-                            -4.65
-                        ]
-                    ]
-                ]
-            }
-        }
-    ]
+  "type": "FeatureCollection",
+  "name": "Anak Krakatau 2026 Impact Areas",
+  "generated_at": "2026-10-01T06:57:00+00:00",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Banten",
+        "country": "Indonesia",
+        "impact_status": "mentioned in source",
+        "event": "Anak Krakatau 2026",
+        "source_url": "http://geologi.esdm.go.id/media-center/laporan-khusus-penurunan-tingkat-aktivitas-gunungapi-anak-krakatau-provinsi-lampung-dari-level-iii-siaga-menjadi-level-ii-waspada-tanggal-21-september-2026-pukul-18-30-wib",
+        "source_date": "2026-09-27",
+        "last_updated": "2026-10-01T06:57:00+00:00",
+        "note": "Approximate analytical coverage derived from keyword-detected official reporting; not an administrative boundary."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              105.05,
+              -7.05
+            ],
+            [
+              106.85,
+              -7.05
+            ],
+            [
+              106.85,
+              -5.85
+            ],
+            [
+              105.05,
+              -5.85
+            ],
+            [
+              105.05,
+              -7.05
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bengkulu",
+        "country": "Indonesia",
+        "impact_status": "reported impact",
+        "event": "Anak Krakatau 2026",
+        "source_url": "https://www.bmkg.go.id/siaran-pers",
+        "source_date": "2026-09-22",
+        "last_updated": "2026-10-01T06:57:00+00:00",
+        "note": "Approximate analytical coverage derived from keyword-detected official reporting; not an administrative boundary."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              101.0,
+              -5.55
+            ],
+            [
+              104.0,
+              -5.55
+            ],
+            [
+              104.0,
+              -2.45
+            ],
+            [
+              101.0,
+              -2.45
+            ],
+            [
+              101.0,
+              -5.55
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DKI Jakarta",
+        "country": "Indonesia",
+        "impact_status": "mentioned in source",
+        "event": "Anak Krakatau 2026",
+        "source_url": "https://www.thestar.com.my/news/nation/2026/09/06/malaysia-airlines-cancels-12-jakarta-flights-after-anak-krakatau-eruption",
+        "source_date": "2026-09-06",
+        "last_updated": "2026-10-01T06:57:00+00:00",
+        "note": "Approximate analytical coverage derived from keyword-detected official reporting; not an administrative boundary."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              106.63,
+              -6.45
+            ],
+            [
+              107.02,
+              -6.45
+            ],
+            [
+              107.02,
+              -6.02
+            ],
+            [
+              106.63,
+              -6.02
+            ],
+            [
+              106.63,
+              -6.45
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jawa Barat",
+        "country": "Indonesia",
+        "impact_status": "mentioned in source",
+        "event": "Anak Krakatau 2026",
+        "source_url": "http://geologi.esdm.go.id/media-center/laporan-khusus-penurunan-tingkat-aktivitas-gunungapi-anak-krakatau-provinsi-lampung-dari-level-iii-siaga-menjadi-level-ii-waspada-tanggal-21-september-2026-pukul-18-30-wib",
+        "source_date": "2026-09-27",
+        "last_updated": "2026-10-01T06:57:00+00:00",
+        "note": "Approximate analytical coverage derived from keyword-detected official reporting; not an administrative boundary."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              106.25,
+              -7.85
+            ],
+            [
+              108.85,
+              -7.85
+            ],
+            [
+              108.85,
+              -5.85
+            ],
+            [
+              106.25,
+              -5.85
+            ],
+            [
+              106.25,
+              -7.85
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lampung",
+        "country": "Indonesia",
+        "impact_status": "reported / monitored",
+        "event": "Anak Krakatau 2026",
+        "source_url": "http://geologi.esdm.go.id/media-center/laporan-khusus-penurunan-tingkat-aktivitas-gunungapi-anak-krakatau-provinsi-lampung-dari-level-iii-siaga-menjadi-level-ii-waspada-tanggal-21-september-2026-pukul-18-30-wib",
+        "source_date": "2026-09-27",
+        "last_updated": "2026-10-01T06:57:00+00:00",
+        "note": "Approximate analytical coverage derived from keyword-detected official reporting; not an administrative boundary."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.2,
+              -5.95
+            ],
+            [
+              105.75,
+              -5.95
+            ],
+            [
+              105.75,
+              -3.75
+            ],
+            [
+              103.2,
+              -3.75
+            ],
+            [
+              103.2,
+              -5.95
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Malaysia",
+        "country": "Malaysia",
+        "impact_status": "mentioned in source",
+        "event": "Anak Krakatau 2026",
+        "source_url": "https://www.thestar.com.my/news/nation/2026/09/06/malaysia-airlines-cancels-12-jakarta-flights-after-anak-krakatau-eruption",
+        "source_date": "2026-09-06",
+        "last_updated": "2026-10-01T06:57:00+00:00",
+        "note": "Approximate analytical coverage derived from keyword-detected official reporting; not an administrative boundary."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              99.55,
+              1.0
+            ],
+            [
+              104.9,
+              1.0
+            ],
+            [
+              104.9,
+              7.4
+            ],
+            [
+              99.55,
+              7.4
+            ],
+            [
+              99.55,
+              1.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Singapore",
+        "country": "Singapore",
+        "impact_status": "aviation impact / reported mention",
+        "event": "Anak Krakatau 2026",
+        "source_url": "https://www.thestar.com.my/news/nation/2026/09/06/malaysia-airlines-cancels-12-jakarta-flights-after-anak-krakatau-eruption",
+        "source_date": "2026-09-06",
+        "last_updated": "2026-10-01T06:57:00+00:00",
+        "note": "Approximate analytical coverage derived from keyword-detected official reporting; not an administrative boundary."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.58,
+              1.15
+            ],
+            [
+              104.1,
+              1.15
+            ],
+            [
+              104.1,
+              1.48
+            ],
+            [
+              103.58,
+              1.48
+            ],
+            [
+              103.58,
+              1.15
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Soekarno-Hatta International Airport",
+        "code": "CGK",
+        "province": "Banten",
+        "impact": "Temporary closure",
+        "feature_type": "airport",
+        "last_updated": "2026-10-01T06:57:00+00:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6559,
+          -6.1256
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kuala Lumpur International Airport",
+        "code": "KUL",
+        "province": "Malaysia",
+        "impact": "Aviation impact / mention",
+        "feature_type": "airport",
+        "last_updated": "2026-10-01T06:57:00+00:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.7099,
+          2.7456
+        ]
+      }
+    }
+  ]
 }

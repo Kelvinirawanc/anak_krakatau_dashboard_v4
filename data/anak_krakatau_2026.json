@@ -1,33 +1,59 @@
 {
     "metadata": {
-        "last_updated": "2026-10-01T06:06:30.193505+00:00",
-        "last_updated_display": "01 October 2026, 06:06 WIB",
+        "last_updated": "2026-10-01T06:57:00+00:00",
         "scraper": "scrape_anak_krakatau_2026.py",
         "author": "Kelvin Irawan",
-        "description": "Automatically updated Anak Krakatau 2026 impact data using keyword discovery with relevance validation and fixed-reference fallback.",
-        "selection_flow": "keyword search -> candidate scoring -> threshold validation -> use selected reference; otherwise fixed reference fallback",
-        "note": "Fallback values are used when a source is unavailable or a value cannot be parsed. Search references are never accepted unless they pass the configured relevance validation."
+        "description": "Keyword-based scraper for official Anak Krakatau 2026 impact reporting.",
+        "discovery_mode": "keywords",
+        "fixed_article_urls": false,
+        "fallback_used": true,
+        "fallback_fields": [
+            "population.exposed_population",
+            "health.hospitals",
+            "health.puskesmas",
+            "health.affected_regencies_cities",
+            "health.ispa",
+            "aviation.total_affected_flights",
+            "aviation.total_affected_passengers",
+            "aviation.temporarily_closed.flights",
+            "aviation.temporarily_closed.passengers",
+            "aviation.route_adjustment.flights",
+            "aviation.route_adjustment.passengers"
+        ],
+        "sources_discovered": 7,
+        "keyword_sources": 6,
+        "fixed_reference_sources": 1,
+        "regional_airline_sources": 2
     },
     "event": {
         "name": "Gunung Anak Krakatau",
         "location": "Sunda Strait, Lampung",
-        "current_status": "Level II — Waspada",
-        "status_date": "21 September 2026, 18:30 WIB",
+        "current_status": "Level III — Siaga",
+        "status_date": "30 September 2026",
         "level_iii_start": "2 July 2026, 16:30 WIB",
         "continuous_eruption_start": "4 September 2026, 23:07 WIB",
         "continuous_eruption_end": "6 September 2026, 00:04 WIB",
-        "continuous_eruption_duration": "~25 hours"
+        "continuous_eruption_duration": "~25 hours",
+        "status_source_url": "https://geologi.esdm.go.id"
+    },
+    "activity": {
+        "total_eruptions_until_3_sep": null,
+        "strombolian_eruptions_after_continuous": null
     },
     "population": {
         "exposed_population": 23360000,
-        "source_method": "scraped"
+        "source_url": null,
+        "source_title": null,
+        "source_date": null
     },
     "health": {
         "hospitals": 413,
         "puskesmas": 830,
         "affected_regencies_cities": 20,
-        "ispa_cases": 16759,
-        "source_method": "scraped"
+        "ispa": 16759,
+        "source_url": "https://kemkes.go.id/id/layanan/fasilitas-kesehatan",
+        "source_title": "FASILITAS KESEHATAN",
+        "source_date": null
     },
     "aviation": {
         "total_affected_flights": 2300,
@@ -40,90 +66,99 @@
             "flights": 922,
             "passengers": 92758
         },
-        "source_method": "scraped"
+        "source_url": "https://kemenhub.go.id/post/read/perkuat-kontribusi-di-penerbangan-sipil-internasional,-menhub-dudy-galang-dukungan-keanggotaan-indonesia-di-dewan-icao",
+        "source_title": "Perkuat Kontribusi di Penerbangan Sipil Internasional, Menhub Dudy Galang Dukungan Keanggotaan Indonesia di Dewan ICAO Kementerian Perhubungan Republik Indonesia",
+        "source_date": null,
+        "total_note": "Headline totals may be rounded; category values are reported detail where available."
     },
     "impacted_airports": [
         {
             "name": "Soekarno-Hatta International Airport",
             "code": "CGK",
             "province": "Banten",
-            "country": "Indonesia",
             "impact": "Temporary closure",
             "lat": -6.1256,
             "lng": 106.6559
         },
         {
-            "name": "Halim Perdanakusuma Airport",
-            "code": "HLP",
-            "province": "DKI Jakarta",
+            "name": "Kuala Lumpur International Airport",
+            "code": "KUL",
+            "province": "Malaysia",
+            "impact": "Aviation impact / mention",
+            "lat": 2.7456,
+            "lng": 101.7099
+        }
+    ],
+    "impacted_locations": [
+        {
+            "name": "Banten",
             "country": "Indonesia",
-            "impact": "Temporary closure",
-            "lat": -6.2666,
-            "lng": 106.89
+            "status": "mentioned in source",
+            "source_url": "http://geologi.esdm.go.id/media-center/laporan-khusus-penurunan-tingkat-aktivitas-gunungapi-anak-krakatau-provinsi-lampung-dari-level-iii-siaga-menjadi-level-ii-waspada-tanggal-21-september-2026-pukul-18-30-wib",
+            "source_title": "Berita | Portal Layanan Satu Pintu Badan Geologi",
+            "source_date": "2026-09-27",
+            "evidence": "dalam pada wilayah Kabupaten Lampung Selatan, Provinsi Lampung. Meskipun demikian, pengamatan Gunungapi Anak Krakatau dilakukan melalui 2 pos pengamatan gunungapi, yaitu Pos Pengamatan Gunungapi Anak Krakatau di Kalianda, Kabupaten Lampung Selatan, Provinsi Lampung, dan Pos Pengamatan Gunungapi Anak Krakatau di Pasauran, Kabupaten Serang, Provinsi Banten. Berdasarkan gejala peningkatan kegempaan vulkanik dan deformasi, Gunungapi Anak Krakatau statusnya dinaikan menjadi Siaga (Level III) sejak 2 ",
+            "score": 45
         },
         {
-            "name": "Radin Inten II Airport",
-            "code": "TKG",
-            "province": "Lampung",
+            "name": "Bengkulu",
             "country": "Indonesia",
-            "impact": "Temporary closure",
-            "lat": -5.2427,
-            "lng": 105.1751
+            "status": "reported impact",
+            "source_url": "https://www.bmkg.go.id/siaran-pers",
+            "source_title": "Siaran Pers - BMKG",
+            "source_date": "2026-09-22",
+            "evidence": "4 jam terhadap perkembangan aktivitas erupsi Gunung Anak Krakatau (GAK) dan dampaknya terhadap atmosfer, penerbangan, serta kondisi laut di sekitar Selat Sunda. Berdasarkan analisis citra satelit pada Minggu (6/9) pukul 08.00 WIB, BMKG mengidentifikasi dua klaster sebaran abu vulkanik yang melingkupi wilayah Banten, DKI Jakarta, Jawa Barat, hingga Bengkulu. Baca selengkapnya 5 Sep 2026 BMKG Ungkap Dentuman di Bandung Raya Bukan Berasal dari Aktivitas Gempa Bumi Bandung, 5 September 2026 — Badan ",
+            "score": 12
         },
         {
-            "name": "Budiarto Airport",
-            "code": "RTO",
-            "province": "Banten",
+            "name": "DKI Jakarta",
             "country": "Indonesia",
-            "impact": "Temporary closure",
-            "lat": -6.293,
-            "lng": 106.569
+            "status": "mentioned in source",
+            "source_url": "https://www.thestar.com.my/news/nation/2026/09/06/malaysia-airlines-cancels-12-jakarta-flights-after-anak-krakatau-eruption",
+            "source_title": "Malaysia Airlines cancels 12 Jakarta flights after Anak Krakatau eruption | The Star",
+            "source_date": "2026-09-06",
+            "evidence": "Malaysia Airlines cancels 12 Jakarta flights after Anak Krakatau eruption | The Star × View Subscriptions person person Profile Change Password Manage Logins Subscription Info Transactions Billing Info Manage For You Bookmarks Package & Pricing FAQs Log Out - pts chevron_right info_outline Stay signed in to save your points and redeem your rewards at Nexus featured_seasonal_and_gifts +0 × Your Rewards are Waiting! Stay signed in to save the points you've earned. Click on the points to redeem you",
+            "score": 81
         },
         {
-            "name": "Pondok Cabe Airport",
-            "code": "PCB",
-            "province": "Banten",
+            "name": "Jawa Barat",
             "country": "Indonesia",
-            "impact": "Affected",
-            "lat": -6.3369,
-            "lng": 106.764
+            "status": "mentioned in source",
+            "source_url": "http://geologi.esdm.go.id/media-center/laporan-khusus-penurunan-tingkat-aktivitas-gunungapi-anak-krakatau-provinsi-lampung-dari-level-iii-siaga-menjadi-level-ii-waspada-tanggal-21-september-2026-pukul-18-30-wib",
+            "source_title": "Berita | Portal Layanan Satu Pintu Badan Geologi",
+            "source_date": "2026-09-27",
+            "evidence": "di wilayah pantai Provinsi Banten dan Lampung harap tenang dan jangan mempercayai isu-isu tentang erupsi Gunungapi Anak Krakatau yang akan menyebabkan tsunami, serta dapat melakukan kegiatan seperti biasa dengan senantiasa mengikuti arahan BPBD setempat. Untuk mengetahui informasi dapat menghubungi Badan Geologi (022) 7272606 di Bandung (Provinsi Jawa Barat) atau Pos Pengamatan G. Krakatau (0254) 651449 atau 085846324506 di Pasauran (Provinsi Banten). Masyarakat, pemerintah daerah, dan instansi ",
+            "score": 45
         },
         {
-            "name": "Husein Sastranegara Airport",
-            "code": "BDO",
-            "province": "West Java",
+            "name": "Lampung",
             "country": "Indonesia",
-            "impact": "Affected",
-            "lat": -6.9006,
-            "lng": 107.5764
+            "status": "reported / monitored",
+            "source_url": "http://geologi.esdm.go.id/media-center/laporan-khusus-penurunan-tingkat-aktivitas-gunungapi-anak-krakatau-provinsi-lampung-dari-level-iii-siaga-menjadi-level-ii-waspada-tanggal-21-september-2026-pukul-18-30-wib",
+            "source_title": "Berita | Portal Layanan Satu Pintu Badan Geologi",
+            "source_date": "2026-09-27",
+            "evidence": "Berita | Portal Layanan Satu Pintu Badan Geologi Hak Cipta © 2026 Badan Geologi, Kementerian Energi dan Sumber Daya Mineral Badan Geologi [ Badan Geologi ] Berita Badan Geologi Beranda SBG Arsip Berita Berita LAPORAN KHUSUS Penurunan Tingkat Aktivitas Gunungapi Anak Krakatau Provinsi Lampung dari Level III (Siaga) menjadi Level II (Waspada) Tanggal 21 September 2026 Pukul 18.30 WIB Senin, 21 September 2026 Humas - Sekretariat Badan Geologi LAPORAN KHUSUS Nomor: 1604 .Lap/GL.03/BGL/2026 Penurunan",
+            "score": 45
         },
         {
-            "name": "Muhammad Taufiq Kiemas Airport",
-            "code": "TNB",
-            "province": "Lampung",
-            "country": "Indonesia",
-            "impact": "Affected",
-            "lat": -5.211,
-            "lng": 105.163
+            "name": "Malaysia",
+            "country": "Malaysia",
+            "status": "mentioned in source",
+            "source_url": "https://www.thestar.com.my/news/nation/2026/09/06/malaysia-airlines-cancels-12-jakarta-flights-after-anak-krakatau-eruption",
+            "source_title": "Malaysia Airlines cancels 12 Jakarta flights after Anak Krakatau eruption | The Star",
+            "source_date": "2026-09-06",
+            "evidence": "Malaysia Airlines cancels 12 Jakarta flights after Anak Krakatau eruption | The Star × View Subscriptions person person Profile Change Password Manage Logins Subscription Info Transactions Billing Info Manage For You Bookmarks Package & Pricing FAQs Log Out - pts chevron_right info_outline Stay signed in to save your points and redeem your rewards at Nexus featured_seasonal_and_gifts +0 × Your Rewards are Waiting! Stay signed in to save the points you've earned. Click on the points to redeem you",
+            "score": 81
         },
         {
-            "name": "Atung Bungsu Airport",
-            "code": "PXA",
-            "province": "South Sumatra",
-            "country": "Indonesia",
-            "impact": "Previously affected",
-            "lat": -4.033,
-            "lng": 103.395
-        },
-        {
-            "name": "Singapore Changi Airport",
-            "code": "SIN",
-            "province": "Singapore",
+            "name": "Singapore",
             "country": "Singapore",
-            "impact": "International route disruption",
-            "lat": 1.3644,
-            "lng": 103.9915,
-            "regional": true
+            "status": "aviation impact / reported mention",
+            "source_url": "https://www.thestar.com.my/news/nation/2026/09/06/malaysia-airlines-cancels-12-jakarta-flights-after-anak-krakatau-eruption",
+            "source_title": "Malaysia Airlines cancels 12 Jakarta flights after Anak Krakatau eruption | The Star",
+            "source_date": "2026-09-06",
+            "evidence": "porarily closed on Sunday after volcanic ash from the eruption of Mount Anak Krakatau was detected in the airport area, disrupting 209 flights and affecting 22,798 passengers. Civil Aviation Director General Lukman F Laisa said 16 international flights were cancelled, seven delayed and five rescheduled, involving services to and from Kuala Lumpur, Singapore, Hong Kong, Sydney, Seoul/Incheon, Doha and Amsterdam. The Geological Agency in a special report published on its website on Saturday (Sept ",
+            "score": 81
         }
     ],
     "regional_impacts": {
@@ -136,167 +171,243 @@
         ],
         "indonesia_description": "BMKG identified volcanic-ash clusters affecting parts of Banten, DKI Jakarta, Jawa Barat, Lampung and Bengkulu, with higher-level ash extending farther west and southwest over the Indian Ocean.",
         "singapore": {
-            "status": "Referenced regional aviation effect",
-            "description": "Singapore Airlines retimed/cancelled Singapore–Jakarta services and added relief flights in response to the eruption-related disruption.",
+            "status": "Aviation disruption",
+            "description": "Singapore Airlines reported Singapore–Jakarta flight disruption associated with the Anak Krakatau eruption.",
+            "relief_flights_added": null,
             "code": "SIN",
             "lat": 1.3644,
             "lng": 103.9915,
-            "source_method": "fallback"
+            "source_url": "https://www.straitstimes.com/live-indonesia-volcano-flights",
+            "source_title": "Recap: Mount Anak Krakatau eruption closes Jakarta airport",
+            "source_date": null,
+            "source_method": "keyword_search"
+        },
+        "malaysia_airlines": {
+            "status": "Aviation disruption",
+            "description": "Malaysia Airlines cancelled 12 Jakarta flights following volcanic activity from Anak Krakatau, affecting operations at Soekarno-Hatta International Airport.",
+            "cancelled_flights": 12,
+            "code": "KUL",
+            "lat": 2.7456,
+            "lng": 101.7099,
+            "source_url": "https://www.thestar.com.my/news/nation/2026/09/06/malaysia-airlines-cancels-12-jakarta-flights-after-anak-krakatau-eruption",
+            "source_title": "Malaysia Airlines cancels 12 Jakarta flights after Anak Krakatau eruption | The Star",
+            "source_date": "2026-09-06",
+            "source_method": "fixed_reference_fallback"
         },
         "malaysia": {
-            "status": "Monitoring — low risk",
-            "description": "MetMalaysia assessed the current risk of Anak Krakatau ash reaching Malaysia as low and continued monitoring wind, satellite data, and VAAC information.",
+            "status": "Monitoring",
+            "description": "Malaysia continued monitoring the potential regional ash impact from Anak Krakatau.",
             "lat": 3.139,
             "lng": 101.6869,
-            "source_method": "scraped"
+            "source_url": "https://www.nadma.gov.my/bm/media-2/berita/7289-kebakaran-di-kalimantan-malaysia-masih-tunggu-maklum-balas-indonesia-tawaran-bantuan-aset",
+            "source_title": "Portal NADMA - Kebakaran di Kalimantan: Malaysia masih tunggu maklum balas Indonesia tawaran bantuan aset",
+            "source_date": "2026-10-01",
+            "source_method": "keyword_search"
         }
     },
     "eruption": {
         "timeline": [
             {
-                "date": "2 July 2026",
+                "date": "2 July 2026, 16:30 WIB",
                 "title": "Level III — Siaga",
-                "description": "Gunung Anak Krakatau was raised to Level III (Siaga) following increased volcanic seismicity and deformation."
+                "description": "Latest keyword-discovered official reporting associated with the Level III status change."
             },
             {
-                "date": "4 September 2026 — 23:07 WIB",
-                "title": "Continuous eruption began",
-                "description": "A continuous eruption was observed, accompanied by intense volcanic activity."
-            },
-            {
-                "date": "6 September 2026 — 00:04 WIB",
-                "title": "Continuous eruption ended",
-                "description": "The continuous eruption ended after approximately 25 hours."
-            },
-            {
-                "date": "6–7 September 2026",
-                "title": "Volcanic ash impact",
-                "description": "Volcanic ash affected parts of Indonesia and disrupted aviation operations across multiple airports."
-            },
-            {
-                "date": "7 September 2026",
+                "date": "Latest aviation report",
                 "title": "Aviation disruption",
-                "description": "Kementerian Perhubungan reported approximately 2,300 affected flights and 270,337 affected passengers cumulatively since 5 September."
-            },
-            {
-                "date": "21 September 2026 — 18:30 WIB",
-                "title": "Status lowered to Level II",
-                "description": "Badan Geologi lowered the activity level from Level III (Siaga) to Level II (Waspada)."
+                "description": "Reported aviation impact includes 2,300 affected flights and 270,337 affected passengers."
             }
         ]
     },
     "sources": [
         {
-            "title": "Badan Geologi — Latest Status",
-            "date": "21 September 2026",
-            "url": "https://geologi.esdm.go.id/media-center/laporan-khusus-penurunan-tingkat-aktivitas-gunungapi-anak-krakatau-provinsi-lampung-dari-level-iii-siaga-menjadi-level-ii-waspada-tanggal-21-september-2026-pukul-18-30-wib",
-            "fixed_reference": "https://geologi.esdm.go.id/media-center/laporan-khusus-penurunan-tingkat-aktivitas-gunungapi-anak-krakatau-provinsi-lampung-dari-level-iii-siaga-menjadi-level-ii-waspada-tanggal-21-september-2026-pukul-18-30-wib",
-            "selection_method": "fixed_fallback",
-            "relevance_score": 0,
-            "minimum_score": 9,
-            "validation_passed": false,
-            "matched_keywords": {},
-            "candidate_count": 0,
-            "best_candidate": null,
-            "fetch_status": "OK"
+            "name": "Badan Geologi / PVMBG",
+            "domains": [
+                "geologi.esdm.go.id"
+            ],
+            "url": "http://geologi.esdm.go.id/media-center/laporan-khusus-penurunan-tingkat-aktivitas-gunungapi-anak-krakatau-provinsi-lampung-dari-level-iii-siaga-menjadi-level-ii-waspada-tanggal-21-september-2026-pukul-18-30-wib",
+            "title": "Berita | Portal Layanan Satu Pintu Badan Geologi",
+            "date": "2026-09-27",
+            "keyword_hits": [
+                "anak krakatau",
+                "krakatau",
+                "erupsi",
+                "erupsi gunungapi",
+                "aktivitas gunungapi",
+                "level ii",
+                "level iii",
+                "waspada",
+                "siaga"
+            ],
+            "pages_checked": 5,
+            "score": 45,
+            "validation_threshold": 14,
+            "validation_passed": true,
+            "reference_type": "keyword_match",
+            "fetch_status": "OK",
+            "discovery_method": "keywords + sitemap + internal links + site-restricted search; fixed URL fallback if relevance threshold is not met",
+            "fixed_reference_url": "https://geologi.esdm.go.id/media-center/laporan-khusus-penurunan-tingkat-aktivitas-gunungapi-anak-krakatau-provinsi-lampung-dari-level-iii-siaga-menjadi-level-ii-waspada-tanggal-21-september-2026-pukul-18-30-wib"
         },
         {
-            "title": "Kementerian Perhubungan RI — Aviation",
-            "date": "7 September 2026",
-            "url": "https://www.kemenhub.go.id/post/read/sejumlah-bandara-masih-terdampak-abu-vulkanik-gunung-anak-krakatau%2C-kemenhub-siapkan-bandara-alternatif",
-            "fixed_reference": "https://www.kemenhub.go.id/post/read/sejumlah-bandara-masih-terdampak-abu-vulkanik-gunung-anak-krakatau%2C-kemenhub-siapkan-bandara-alternatif",
-            "selection_method": "fixed_fallback",
-            "relevance_score": 0,
-            "minimum_score": 12,
-            "validation_passed": false,
-            "matched_keywords": {},
-            "candidate_count": 0,
-            "best_candidate": null,
-            "fetch_status": "OK"
-        },
-        {
-            "title": "Kementerian Kesehatan RI — Response",
-            "date": "7 September 2026",
-            "url": "https://www.kemkes.go.id/id/kemenkes-siagakan-413-rumah-sakit-dan-830-puskesmas-hadapi-dampak-erupsi-anak-krakatau",
-            "fixed_reference": "https://www.kemkes.go.id/id/kemenkes-siagakan-413-rumah-sakit-dan-830-puskesmas-hadapi-dampak-erupsi-anak-krakatau",
-            "selection_method": "fixed_fallback",
-            "relevance_score": 0,
-            "minimum_score": 12,
-            "validation_passed": false,
-            "matched_keywords": {},
-            "candidate_count": 0,
-            "best_candidate": null,
-            "fetch_status": "OK"
-        },
-        {
-            "title": "Kementerian Kesehatan RI — Air Quality",
-            "date": "September 2026",
-            "url": "https://kemkes.go.id/eng/kemenkes-perkuat-pemantauan-kualitas-udara-hadapi-dampak-erupsi-anak-krakatau",
-            "fixed_reference": "https://kemkes.go.id/eng/kemenkes-perkuat-pemantauan-kualitas-udara-hadapi-dampak-erupsi-anak-krakatau",
-            "selection_method": "fixed_fallback",
-            "relevance_score": 0,
-            "minimum_score": 11,
-            "validation_passed": false,
-            "matched_keywords": {},
-            "candidate_count": 0,
-            "best_candidate": null,
-            "fetch_status": "OK"
-        },
-        {
-            "title": "BMKG — Volcanic Ash Monitoring",
-            "date": "6–7 September 2026",
-            "url": "https://www.bmkg.go.id/berita/utama/bmkg-terus-pantau-dampak-erupsi-gunung-anak-krakatau",
-            "fixed_reference": "https://www.bmkg.go.id/berita/utama/bmkg-terus-pantau-dampak-erupsi-gunung-anak-krakatau",
-            "selection_method": "fixed_fallback",
-            "relevance_score": 0,
-            "minimum_score": 11,
-            "validation_passed": false,
-            "matched_keywords": {},
-            "candidate_count": 0,
-            "best_candidate": null,
-            "fetch_status": "OK"
-        },
-        {
-            "title": "BNPB — Eruption Update",
-            "date": "11 September 2026",
+            "name": "Badan Nasional Penanggulangan Bencana",
+            "domains": [
+                "bnpb.go.id",
+                "www.bnpb.go.id"
+            ],
             "url": "https://bnpb.go.id/berita/update-aktivitas-gunung-anak-krakatau-status-level-iii-masih-berlaku",
-            "fixed_reference": "https://bnpb.go.id/berita/update-aktivitas-gunung-anak-krakatau-status-level-iii-masih-berlaku",
-            "selection_method": "fixed_fallback",
-            "relevance_score": 0,
-            "minimum_score": 10,
+            "title": "Badan Nasional Penanggulangan Bencana",
+            "date": null,
+            "keyword_hits": [],
+            "pages_checked": 0,
+            "score": 0,
+            "validation_threshold": 12,
             "validation_passed": false,
-            "matched_keywords": {},
-            "candidate_count": 0,
-            "best_candidate": null,
-            "fetch_status": "OK"
+            "reference_type": "unavailable",
+            "fetch_status": "UNAVAILABLE",
+            "discovery_method": "keywords + sitemap + internal links + site-restricted search; fixed URL fallback if relevance threshold is not met",
+            "fixed_reference_url": "https://bnpb.go.id/berita/update-aktivitas-gunung-anak-krakatau-status-level-iii-masih-berlaku"
         },
         {
-            "title": "Singapore Airlines — Regional Aviation Disruption",
-            "date": "8 September 2026",
-            "url": "https://www.singaporeair.com/en_UK/dk/corporate/newsroom/newsalert-listing/advisory-on-singapore-airlines-flights-impacted-by-the-eruption-/",
-            "fixed_reference": "https://www.singaporeair.com/en_UK/dk/corporate/newsroom/newsalert-listing/advisory-on-singapore-airlines-flights-impacted-by-the-eruption-/",
-            "selection_method": "fixed_fallback",
-            "relevance_score": 0,
-            "minimum_score": 10,
-            "validation_passed": false,
-            "matched_keywords": {},
-            "candidate_count": 0,
-            "best_candidate": null,
-            "fetch_status": "OK"
+            "name": "Kementerian Perhubungan RI",
+            "domains": [
+                "kemenhub.go.id",
+                "dephub.go.id"
+            ],
+            "url": "https://kemenhub.go.id/post/read/perkuat-kontribusi-di-penerbangan-sipil-internasional,-menhub-dudy-galang-dukungan-keanggotaan-indonesia-di-dewan-icao",
+            "title": "Perkuat Kontribusi di Penerbangan Sipil Internasional, Menhub Dudy Galang Dukungan Keanggotaan Indonesia di Dewan ICAO Kementerian Perhubungan Republik Indonesia",
+            "date": null,
+            "keyword_hits": [
+                "penerbangan",
+                "penumpang"
+            ],
+            "pages_checked": 2,
+            "score": 14,
+            "validation_threshold": 14,
+            "validation_passed": true,
+            "reference_type": "keyword_match",
+            "fetch_status": "OK",
+            "discovery_method": "keywords + sitemap + internal links + site-restricted search; fixed URL fallback if relevance threshold is not met",
+            "fixed_reference_url": "https://www.kemenhub.go.id/post/read/sejumlah-bandara-masih-terdampak-abu-vulkanik-gunung-anak-krakatau%2C-kemenhub-siapkan-bandara-alternatif"
         },
         {
-            "title": "Portal NADMA / MetMalaysia — Malaysia Risk",
-            "date": "9 September 2026",
-            "url": "https://www.nadma.gov.my/bi/media-en/news/7101-metmalaysia-anak-krakatau-ash-could-reach-malaysia-but-risk-remains-low",
-            "fixed_reference": "https://www.nadma.gov.my/bi/media-en/news/7101-metmalaysia-anak-krakatau-ash-could-reach-malaysia-but-risk-remains-low",
-            "selection_method": "fixed_fallback",
-            "relevance_score": 0,
-            "minimum_score": 10,
+            "name": "Kementerian Kesehatan RI",
+            "domains": [
+                "kemkes.go.id",
+                "www.kemkes.go.id"
+            ],
+            "url": "https://kemkes.go.id/id/layanan/fasilitas-kesehatan",
+            "title": "FASILITAS KESEHATAN",
+            "date": null,
+            "keyword_hits": [
+                "rumah sakit",
+                "puskesmas",
+                "kesehatan"
+            ],
+            "pages_checked": 4,
+            "score": 18,
+            "validation_threshold": 13,
+            "validation_passed": true,
+            "reference_type": "keyword_match",
+            "fetch_status": "OK",
+            "discovery_method": "keywords + sitemap + internal links + site-restricted search; fixed URL fallback if relevance threshold is not met",
+            "fixed_reference_url": "https://www.kemkes.go.id/id/kemenkes-siagakan-413-rumah-sakit-dan-830-puskesmas-hadapi-dampak-erupsi-anak-krakatau"
+        },
+        {
+            "name": "Badan Meteorologi, Klimatologi, dan Geofisika",
+            "domains": [
+                "bmkg.go.id",
+                "www.bmkg.go.id"
+            ],
+            "url": "https://www.bmkg.go.id/siaran-pers",
+            "title": "Siaran Pers - BMKG",
+            "date": "2026-09-22",
+            "keyword_hits": [
+                "anak krakatau",
+                "abu vulkanik",
+                "sebaran abu",
+                "penerbangan"
+            ],
+            "pages_checked": 1,
+            "score": 12,
+            "validation_threshold": 12,
+            "validation_passed": true,
+            "reference_type": "keyword_match",
+            "fetch_status": "OK",
+            "discovery_method": "keywords + sitemap + internal links + site-restricted search; fixed URL fallback if relevance threshold is not met",
+            "fixed_reference_url": "https://www.bmkg.go.id/berita/utama/bmkg-terus-pantau-dampak-erupsi-gunung-anak-krakatau"
+        },
+        {
+            "name": "The Straits Times — Singapore Airlines",
+            "domains": [
+                "straitstimes.com",
+                "www.straitstimes.com"
+            ],
+            "url": "https://www.straitstimes.com/live-indonesia-volcano-flights",
+            "title": "Recap: Mount Anak Krakatau eruption closes Jakarta airport",
+            "date": null,
+            "keyword_hits": [
+                "anak krakatau",
+                "eruption",
+                "jakarta"
+            ],
+            "pages_checked": 9,
+            "score": 47,
+            "validation_threshold": 12,
+            "validation_passed": true,
+            "reference_type": "keyword_match",
+            "fetch_status": "OK",
+            "discovery_method": "keywords + sitemap + internal links + site-restricted search; fixed URL fallback if relevance threshold is not met",
+            "fixed_reference_url": "https://www.straitstimes.com/singapore/anak-krakatau-eruption-sia-adds-8-relief-flights-between-jakarta-and-singapore"
+        },
+        {
+            "name": "The Star — Malaysia Airlines",
+            "domains": [
+                "thestar.com.my",
+                "www.thestar.com.my"
+            ],
+            "url": "https://www.thestar.com.my/news/nation/2026/09/06/malaysia-airlines-cancels-12-jakarta-flights-after-anak-krakatau-eruption",
+            "title": "Malaysia Airlines cancels 12 Jakarta flights after Anak Krakatau eruption | The Star",
+            "date": "2026-09-06",
+            "keyword_hits": [
+                "anak krakatau",
+                "eruption",
+                "volcanic ash",
+                "malaysia airlines",
+                "jakarta",
+                "cancelled",
+                "flights"
+            ],
+            "pages_checked": 1,
+            "score": 81,
+            "validation_threshold": 12,
             "validation_passed": false,
-            "matched_keywords": {},
-            "candidate_count": 0,
-            "best_candidate": null,
-            "fetch_status": "OK"
+            "reference_type": "fixed_reference_fallback",
+            "fetch_status": "OK",
+            "discovery_method": "keywords + sitemap + internal links + site-restricted search; fixed URL fallback if relevance threshold is not met",
+            "fixed_reference_url": "https://www.thestar.com.my/news/nation/2026/09/06/malaysia-airlines-cancels-12-jakarta-flights-after-anak-krakatau-eruption"
+        },
+        {
+            "name": "Portal NADMA / MetMalaysia — Malaysia Risk",
+            "domains": [
+                "met.gov.my",
+                "nadma.gov.my",
+                "www.nadma.gov.my",
+                "www.met.gov.my"
+            ],
+            "url": "https://www.nadma.gov.my/bm/media-2/berita/7289-kebakaran-di-kalimantan-malaysia-masih-tunggu-maklum-balas-indonesia-tawaran-bantuan-aset",
+            "title": "Portal NADMA - Kebakaran di Kalimantan: Malaysia masih tunggu maklum balas Indonesia tawaran bantuan aset",
+            "date": "2026-10-01",
+            "keyword_hits": [
+                "malaysia"
+            ],
+            "pages_checked": 4,
+            "score": 12,
+            "validation_threshold": 10,
+            "validation_passed": true,
+            "reference_type": "keyword_match",
+            "fetch_status": "OK",
+            "discovery_method": "keywords + sitemap + internal links + site-restricted search; fixed URL fallback if relevance threshold is not met",
+            "fixed_reference_url": "https://www.nadma.gov.my/bi/media-en/news/7101-metmalaysia-anak-krakatau-ash-could-reach-malaysia-but-risk-remains-low"
         }
     ]
 }
