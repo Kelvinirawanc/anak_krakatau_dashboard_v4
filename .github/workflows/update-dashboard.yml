@@ -2,10 +2,7 @@ name: Update Anak Krakatau Dashboard
 
 on:
   schedule:
-    # Every day at 07:00 WIB (00:00 UTC)
     - cron: "0 0 * * *"
-
-  # Allows you to run it manually from GitHub Actions
   workflow_dispatch:
 
 permissions:
@@ -18,116 +15,56 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-
   update-and-deploy:
-
     runs-on: ubuntu-latest
-
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
     steps:
-
-      # =====================================================
-      # 1. Get repository
-      # =====================================================
-
       - name: Checkout repository
         uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
-
-      # =====================================================
-      # 2. Setup Python
-      # =====================================================
-
       - name: Setup Python
         uses: actions/setup-python@v6
         with:
           python-version: "3.12"
-
-
-      # =====================================================
-      # 3. Install scraper dependencies
-      # =====================================================
+          cache: "pip"
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests beautifulsoup4
+          pip install -r requirements.txt
 
+      - name: Run Anak Krakatau scraper
+        run: python scraper/scrape_anak_krakatau_2026.py
 
-      # =====================================================
-      # 4. Run Anak Krakatau scraper
-      # =====================================================
-
-      - name: Run scraper
+      - name: Validate generated data
         run: |
-          python scraper/scrape_anak_krakatau_2026.py
-
-
-      # =====================================================
-      # 5. Show generated files
-      # =====================================================
-
-      - name: Check generated data
-        run: |
-          echo "Generated files:"
-          ls -lh data/
-
-          echo ""
-          echo "JSON:"
-          ls -lh data/anak_krakatau_2026.json
-
-          echo ""
-          echo "GeoJSON:"
-          ls -lh data/impacted_areas.geojson
-
-
-      # =====================================================
-      # 6. Commit updated scraper data
-      # =====================================================
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          for p in [Path("data/anak_krakatau_2026.json"), Path("data/impacted_areas.geojson")]:
+              if not p.exists(): raise SystemExit(f"Missing: {p}")
+              json.loads(p.read_text(encoding="utf-8"))
+              print(f"Valid: {p}")
+          PY
 
       - name: Commit updated data
         run: |
-
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          git add data/anak_krakatau_2026.json
-          git add data/impacted_areas.geojson
-
-          if git diff --cached --quiet; then
-            echo "No data changes detected."
-          else
-            git commit -m "Auto update Anak Krakatau data"
-            git push
-          fi
-
-
-      # =====================================================
-      # 7. Configure GitHub Pages
-      # =====================================================
+          git add data/anak_krakatau_2026.json data/impacted_areas.geojson
+          if git diff --cached --quiet; then echo "No data changes detected."; else git commit -m "Auto update Anak Krakatau data" && git push; fi
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
-
-
-      # =====================================================
-      # 8. Upload dashboard
-      # =====================================================
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
           path: "."
-
-
-      # =====================================================
-      # 9. Deploy dashboard
-      # =====================================================
 
       - name: Deploy to GitHub Pages
         id: deployment
