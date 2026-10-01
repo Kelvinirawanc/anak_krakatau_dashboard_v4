@@ -22,3 +22,6 @@ body{margin:0;background:#f8fafc;color:#111827;font-family:Inter,-apple-system,B
 @media(max-width:600px){.dashboard-header h1{font-size:31px}.header-description{font-size:14px}.kpi-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.kpi-card{min-height:136px;padding:16px}.kpi-value{font-size:25px}.panel{padding:17px}.chart-container{height:280px}.chart-small{height:250px}.map-container{height:360px}.source-list{grid-template-columns:1fr}.footer-title{font-size:15px}}
 @media(max-width:400px){.kpi-grid{grid-template-columns:1fr}.title-row{gap:8px}.title-volcano-icon{width:34px;height:34px;flex-basis:34px}.dashboard-header h1{font-size:28px}}
 @media(max-width:700px){.passenger-panel,.health-panel{height:auto;overflow:visible}.passenger-panel{align-self:stretch}.passenger-human-chart{min-height:175px;gap:18px}.health-panel .chart-small{height:250px}}
+
+/* Source reference status: distinguishes a keyword match from a fixed-reference fallback. */
+.source-status.keyword{color:#15803d}.source-status.reference{color:#a16207}.source-status.unavailable{color:#b91c1c}.source-status-dot.keyword{background:#16a34a}.source-status-dot.reference{background:#f59e0b}.source-status-dot.unavailable{background:#dc2626}
