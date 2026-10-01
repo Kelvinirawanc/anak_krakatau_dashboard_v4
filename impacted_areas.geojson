@@ -1,0 +1,176 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Reported ash-affected corridor — Indonesia",
+        "coverage_type": "ash_affected",
+        "regions": [
+          "Bengkulu",
+          "Lampung",
+          "Banten",
+          "DKI Jakarta",
+          "Jawa Barat"
+        ],
+        "note": "Approximate analytical corridor representing reported ash-affected parts of Indonesia. It is not an official administrative boundary."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              102.45,
+              -5.1
+            ],
+            [
+              103.25,
+              -5.45
+            ],
+            [
+              104.15,
+              -5.35
+            ],
+            [
+              104.95,
+              -5.5
+            ],
+            [
+              105.45,
+              -5.25
+            ],
+            [
+              106.1,
+              -5.35
+            ],
+            [
+              106.85,
+              -5.55
+            ],
+            [
+              107.65,
+              -5.55
+            ],
+            [
+              107.8,
+              -6.15
+            ],
+            [
+              107.2,
+              -6.65
+            ],
+            [
+              106.35,
+              -6.75
+            ],
+            [
+              105.5,
+              -6.8
+            ],
+            [
+              104.75,
+              -7.0
+            ],
+            [
+              103.95,
+              -6.9
+            ],
+            [
+              103.15,
+              -6.7
+            ],
+            [
+              102.6,
+              -6.3
+            ],
+            [
+              102.45,
+              -5.1
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Higher-level ash monitoring area — offshore",
+        "coverage_type": "higher_level_monitoring",
+        "note": "Approximate offshore sector reflecting BMKG reporting of higher-level ash extending farther west/southwest. This visualization is analytical and not an official ash concentration boundary."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              98.2,
+              -4.65
+            ],
+            [
+              99.55,
+              -4.55
+            ],
+            [
+              101.1,
+              -4.75
+            ],
+            [
+              102.7,
+              -4.95
+            ],
+            [
+              103.7,
+              -5.25
+            ],
+            [
+              104.1,
+              -5.9
+            ],
+            [
+              103.4,
+              -6.6
+            ],
+            [
+              102.2,
+              -7.0
+            ],
+            [
+              100.9,
+              -7.0
+            ],
+            [
+              99.6,
+              -6.55
+            ],
+            [
+              98.55,
+              -5.75
+            ],
+            [
+              98.2,
+              -4.65
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kuala Lumpur International Airport",
+        "code": "KUL",
+        "province": "Malaysia",
+        "impact": "International route disruption",
+        "feature_type": "airport",
+        "last_updated": "2026-09-30T13:54:34.532608+00:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.7099,
+          2.7456
+        ]
+      }
+    }
+  ]
+}
