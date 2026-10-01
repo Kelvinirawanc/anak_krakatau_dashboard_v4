@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "last_updated": "2026-09-30T21:43:24.348429+07:00",
-        "last_updated_display": "30 September 2026, 21:43 WIB",
+        "last_updated": "2026-10-01T04:40:19.428535+00:00",
+        "last_updated_display": "01 October 2026, 04:40 WIB",
         "scraper": "scrape_anak_krakatau_2026.py",
         "author": "Kelvin Irawan",
         "description": "Automatically updated Anak Krakatau 2026 impact data from official Indonesian sources plus documented regional aviation/monitoring sources.",
@@ -39,7 +39,7 @@
             "flights": 922,
             "passengers": 92758
         },
-        "source_method": "scraped"
+        "source_method": "fallback"
     },
     "impacted_airports": [
         {
