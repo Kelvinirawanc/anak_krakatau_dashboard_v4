@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "last_updated": "2026-10-01T04:40:19.428535+00:00",
-        "last_updated_display": "01 October 2026, 04:40 WIB",
+        "last_updated": "2026-09-30T13:54:34.532608+00:00",
+        "last_updated_display": "30 September 2026, 20:54 WIB",
         "scraper": "scrape_anak_krakatau_2026.py",
         "author": "Kelvin Irawan",
         "description": "Automatically updated Anak Krakatau 2026 impact data from official Indonesian sources plus documented regional aviation/monitoring sources.",
@@ -19,14 +19,14 @@
     },
     "population": {
         "exposed_population": 23360000,
-        "source_method": "scraped"
+        "source_method": "fallback"
     },
     "health": {
         "hospitals": 413,
         "puskesmas": 830,
-        "affected_regencies_cities": 20,
+        "affected_regencies_cities": 23,
         "ispa_cases": 16759,
-        "source_method": "scraped"
+        "source_method": "fallback"
     },
     "aviation": {
         "total_affected_flights": 2300,
@@ -135,7 +135,7 @@
         ],
         "indonesia_description": "BMKG identified volcanic-ash clusters affecting parts of Banten, DKI Jakarta, Jawa Barat, Lampung and Bengkulu, with higher-level ash extending farther west and southwest over the Indian Ocean.",
         "singapore": {
-            "status": "Referenced regional aviation effect",
+            "status": "Aviation disruption",
             "description": "Singapore Airlines retimed/cancelled Singapore–Jakarta services and added relief flights in response to the eruption-related disruption.",
             "code": "SIN",
             "lat": 1.3644,
@@ -147,7 +147,7 @@
             "description": "MetMalaysia assessed the current risk of Anak Krakatau ash reaching Malaysia as low and continued monitoring wind, satellite data, and VAAC information.",
             "lat": 3.139,
             "lng": 101.6869,
-            "source_method": "scraped"
+            "source_method": "fallback"
         }
     },
     "eruption": {
@@ -190,42 +190,42 @@
             "description": "Latest Anak Krakatau activity and status evaluation.",
             "date": "21 September 2026",
             "url": "https://geologi.esdm.go.id/media-center/laporan-khusus-penurunan-tingkat-aktivitas-gunungapi-anak-krakatau-provinsi-lampung-dari-level-iii-siaga-menjadi-level-ii-waspada-tanggal-21-september-2026-pukul-18-30-wib",
-            "fetch_status": "OK"
+            "fetch_status": "FALLBACK"
         },
         {
             "title": "Kementerian Perhubungan RI",
             "description": "Affected flights, passengers, closures and route adjustments.",
             "date": "7 September 2026",
-            "url": "https://www.kemenhub.go.id/post/read/sejumlah-bandara-masih-terdampak-abu-vulkanik-gunung-anak-krakatau%2C-kemenhub-siapkan-bandara-alternatif",
-            "fetch_status": "OK"
+            "url": "https://dephub.go.id/post/read/sejumlah-bandara-masih-terdampak-abu-vulkanik-gunung-anak-krakatau%2C-kemenhub-siapkan-bandara-alternatif",
+            "fetch_status": "FALLBACK"
         },
         {
             "title": "Kementerian Kesehatan RI",
             "description": "Population exposure and healthcare preparedness.",
             "date": "7 September 2026",
             "url": "https://www.kemkes.go.id/id/kemenkes-siagakan-413-rumah-sakit-dan-830-puskesmas-hadapi-dampak-erupsi-anak-krakatau",
-            "fetch_status": "OK"
+            "fetch_status": "FALLBACK"
         },
         {
             "title": "Kementerian Kesehatan RI — Air Quality",
             "description": "Respiratory-health monitoring and ISPA cases.",
             "date": "September 2026",
             "url": "https://kemkes.go.id/eng/kemenkes-perkuat-pemantauan-kualitas-udara-hadapi-dampak-erupsi-anak-krakatau",
-            "fetch_status": "OK"
+            "fetch_status": "FALLBACK"
         },
         {
             "title": "BMKG — Volcanic Ash Monitoring",
             "description": "Ash distribution, SIGMETs and atmospheric impact monitoring.",
             "date": "6–7 September 2026",
             "url": "https://www.bmkg.go.id/berita/utama/bmkg-terus-pantau-dampak-erupsi-gunung-anak-krakatau",
-            "fetch_status": "OK"
+            "fetch_status": "FALLBACK"
         },
         {
             "title": "BNPB — Eruption Update",
             "description": "Eruption activity and disaster response measures.",
             "date": "11 September 2026",
             "url": "https://bnpb.go.id/berita/update-aktivitas-gunung-anak-krakatau-status-level-iii-masih-berlaku",
-            "fetch_status": "OK"
+            "fetch_status": "FALLBACK"
         },
         {
             "title": "Singapore Airlines",
@@ -239,7 +239,7 @@
             "description": "Malaysia ash-risk monitoring and assessment.",
             "date": "9 September 2026",
             "url": "https://www.nadma.gov.my/bi/media-en/news/7101-metmalaysia-anak-krakatau-ash-could-reach-malaysia-but-risk-remains-low",
-            "fetch_status": "OK"
+            "fetch_status": "FALLBACK"
         }
     ]
 }
