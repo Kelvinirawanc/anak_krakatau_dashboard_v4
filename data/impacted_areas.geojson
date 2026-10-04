@@ -1,7 +1,7 @@
 {
   "type": "FeatureCollection",
   "name": "Anak Krakatau 2026 Impact Areas",
-  "generated_at": "2026-10-03T02:57:32+00:00",
+  "generated_at": "2026-10-04T03:28:28+00:00",
   "features": [
     {
       "type": "Feature",
@@ -12,7 +12,7 @@
         "event": "Anak Krakatau 2026",
         "source_url": "http://geologi.esdm.go.id/media-center/laporan-khusus-penurunan-tingkat-aktivitas-gunungapi-anak-krakatau-provinsi-lampung-dari-level-iii-siaga-menjadi-level-ii-waspada-tanggal-21-september-2026-pukul-18-30-wib",
         "source_date": "2026-09-27",
-        "last_updated": "2026-10-03T02:57:32+00:00",
+        "last_updated": "2026-10-04T03:28:28+00:00",
         "note": "Approximate analytical coverage derived from keyword-detected official reporting; not an administrative boundary."
       },
       "geometry": {
@@ -52,7 +52,7 @@
         "event": "Anak Krakatau 2026",
         "source_url": "https://www.bmkg.go.id/siaran-pers",
         "source_date": "2026-09-22",
-        "last_updated": "2026-10-03T02:57:32+00:00",
+        "last_updated": "2026-10-04T03:28:28+00:00",
         "note": "Approximate analytical coverage derived from keyword-detected official reporting; not an administrative boundary."
       },
       "geometry": {
@@ -92,7 +92,7 @@
         "event": "Anak Krakatau 2026",
         "source_url": "https://www.thestar.com.my/news/nation/2026/09/06/malaysia-airlines-cancels-12-jakarta-flights-after-anak-krakatau-eruption",
         "source_date": "2026-09-06",
-        "last_updated": "2026-10-03T02:57:32+00:00",
+        "last_updated": "2026-10-04T03:28:28+00:00",
         "note": "Approximate analytical coverage derived from keyword-detected official reporting; not an administrative boundary."
       },
       "geometry": {
@@ -132,7 +132,7 @@
         "event": "Anak Krakatau 2026",
         "source_url": "http://geologi.esdm.go.id/media-center/laporan-khusus-penurunan-tingkat-aktivitas-gunungapi-anak-krakatau-provinsi-lampung-dari-level-iii-siaga-menjadi-level-ii-waspada-tanggal-21-september-2026-pukul-18-30-wib",
         "source_date": "2026-09-27",
-        "last_updated": "2026-10-03T02:57:32+00:00",
+        "last_updated": "2026-10-04T03:28:28+00:00",
         "note": "Approximate analytical coverage derived from keyword-detected official reporting; not an administrative boundary."
       },
       "geometry": {
@@ -172,7 +172,7 @@
         "event": "Anak Krakatau 2026",
         "source_url": "http://geologi.esdm.go.id/media-center/laporan-khusus-penurunan-tingkat-aktivitas-gunungapi-anak-krakatau-provinsi-lampung-dari-level-iii-siaga-menjadi-level-ii-waspada-tanggal-21-september-2026-pukul-18-30-wib",
         "source_date": "2026-09-27",
-        "last_updated": "2026-10-03T02:57:32+00:00",
+        "last_updated": "2026-10-04T03:28:28+00:00",
         "note": "Approximate analytical coverage derived from keyword-detected official reporting; not an administrative boundary."
       },
       "geometry": {
@@ -212,7 +212,7 @@
         "event": "Anak Krakatau 2026",
         "source_url": "https://www.thestar.com.my/news/nation/2026/09/06/malaysia-airlines-cancels-12-jakarta-flights-after-anak-krakatau-eruption",
         "source_date": "2026-09-06",
-        "last_updated": "2026-10-03T02:57:32+00:00",
+        "last_updated": "2026-10-04T03:28:28+00:00",
         "note": "Approximate analytical coverage derived from keyword-detected official reporting; not an administrative boundary."
       },
       "geometry": {
@@ -252,7 +252,7 @@
         "event": "Anak Krakatau 2026",
         "source_url": "https://www.thestar.com.my/news/nation/2026/09/06/malaysia-airlines-cancels-12-jakarta-flights-after-anak-krakatau-eruption",
         "source_date": "2026-09-06",
-        "last_updated": "2026-10-03T02:57:32+00:00",
+        "last_updated": "2026-10-04T03:28:28+00:00",
         "note": "Approximate analytical coverage derived from keyword-detected official reporting; not an administrative boundary."
       },
       "geometry": {
@@ -291,7 +291,7 @@
         "province": "Banten",
         "impact": "Temporary closure",
         "feature_type": "airport",
-        "last_updated": "2026-10-03T02:57:32+00:00"
+        "last_updated": "2026-10-04T03:28:28+00:00"
       },
       "geometry": {
         "type": "Point",
@@ -309,7 +309,7 @@
         "province": "Malaysia",
         "impact": "Aviation impact / mention",
         "feature_type": "airport",
-        "last_updated": "2026-10-03T02:57:32+00:00"
+        "last_updated": "2026-10-04T03:28:28+00:00"
       },
       "geometry": {
         "type": "Point",

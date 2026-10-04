@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "last_updated": "2026-10-03T02:57:32+00:00",
+        "last_updated": "2026-10-04T03:28:28+00:00",
         "scraper": "scrape_anak_krakatau_2026.py",
         "author": "Kelvin Irawan",
         "description": "Keyword-based scraper for official Anak Krakatau 2026 impact reporting.",
@@ -21,8 +21,8 @@
             "aviation.route_adjustment.passengers"
         ],
         "sources_discovered": 8,
-        "keyword_sources": 7,
-        "fixed_reference_sources": 1,
+        "keyword_sources": 6,
+        "fixed_reference_sources": 2,
         "regional_airline_sources": 2
     },
     "event": {
@@ -66,8 +66,8 @@
             "flights": 922,
             "passengers": 92758
         },
-        "source_url": "https://kemenhub.go.id/post/read/perkuat-kontribusi-di-penerbangan-sipil-internasional,-menhub-dudy-galang-dukungan-keanggotaan-indonesia-di-dewan-icao",
-        "source_title": "Perkuat Kontribusi di Penerbangan Sipil Internasional, Menhub Dudy Galang Dukungan Keanggotaan Indonesia di Dewan ICAO Kementerian Perhubungan Republik Indonesia",
+        "source_url": "https://www.kemenhub.go.id/post/read/sejumlah-bandara-masih-terdampak-abu-vulkanik-gunung-anak-krakatau%2C-kemenhub-siapkan-bandara-alternatif",
+        "source_title": "Request Rejected",
         "source_date": null,
         "total_note": "Headline totals may be rounded; category values are reported detail where available."
     },
@@ -277,18 +277,15 @@
                 "kemenhub.go.id",
                 "dephub.go.id"
             ],
-            "url": "https://kemenhub.go.id/post/read/perkuat-kontribusi-di-penerbangan-sipil-internasional,-menhub-dudy-galang-dukungan-keanggotaan-indonesia-di-dewan-icao",
-            "title": "Perkuat Kontribusi di Penerbangan Sipil Internasional, Menhub Dudy Galang Dukungan Keanggotaan Indonesia di Dewan ICAO Kementerian Perhubungan Republik Indonesia",
+            "url": "https://www.kemenhub.go.id/post/read/sejumlah-bandara-masih-terdampak-abu-vulkanik-gunung-anak-krakatau%2C-kemenhub-siapkan-bandara-alternatif",
+            "title": "Request Rejected",
             "date": null,
-            "keyword_hits": [
-                "penerbangan",
-                "penumpang"
-            ],
-            "pages_checked": 2,
-            "score": 14,
+            "keyword_hits": [],
+            "pages_checked": 1,
+            "score": 4,
             "validation_threshold": 14,
-            "validation_passed": true,
-            "reference_type": "keyword_match",
+            "validation_passed": false,
+            "reference_type": "fixed_reference_fallback",
             "fetch_status": "OK",
             "discovery_method": "keywords + sitemap + internal links + site-restricted search; fixed URL fallback if relevance threshold is not met",
             "fixed_reference_url": "https://www.kemenhub.go.id/post/read/sejumlah-bandara-masih-terdampak-abu-vulkanik-gunung-anak-krakatau%2C-kemenhub-siapkan-bandara-alternatif"
@@ -354,7 +351,7 @@
                 "eruption",
                 "jakarta"
             ],
-            "pages_checked": 1,
+            "pages_checked": 9,
             "score": 47,
             "validation_threshold": 12,
             "validation_passed": true,
