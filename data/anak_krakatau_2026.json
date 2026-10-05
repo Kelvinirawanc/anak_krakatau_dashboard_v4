@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "last_updated": "2026-10-04T03:28:28+00:00",
+        "last_updated": "2026-10-05T03:02:59+00:00",
         "scraper": "scrape_anak_krakatau_2026.py",
         "author": "Kelvin Irawan",
         "description": "Keyword-based scraper for official Anak Krakatau 2026 impact reporting.",
@@ -254,15 +254,16 @@
                 "bnpb.go.id",
                 "www.bnpb.go.id"
             ],
-            "url": "https://www.bnpb.go.id/definisi-bencana",
+            "url": "https://www.bnpb.go.id",
             "title": "Badan Nasional Penanggulangan Bencana",
-            "date": null,
+            "date": "2026-10-03",
             "keyword_hits": [
                 "erupsi",
                 "dampak",
+                "terdampak",
                 "bencana"
             ],
-            "pages_checked": 8,
+            "pages_checked": 1,
             "score": 17,
             "validation_threshold": 12,
             "validation_passed": true,
@@ -351,7 +352,7 @@
                 "eruption",
                 "jakarta"
             ],
-            "pages_checked": 9,
+            "pages_checked": 8,
             "score": 47,
             "validation_threshold": 12,
             "validation_passed": true,
