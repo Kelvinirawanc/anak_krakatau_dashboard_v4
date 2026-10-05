@@ -25,3 +25,88 @@ body{margin:0;background:#f8fafc;color:#111827;font-family:Inter,-apple-system,B
 
 /* Source reference status: distinguishes a keyword match from a fixed-reference fallback. */
 .source-status.keyword{color:#15803d}.source-status.reference{color:#a16207}.source-status.unavailable{color:#b91c1c}.source-status-dot.keyword{background:#16a34a}.source-status-dot.reference{background:#f59e0b}.source-status-dot.unavailable{background:#dc2626}
+
+.source-status.official{color:#14804a}
+.source-status-dot.official{background:#18a957}
+.source-status.unavailable{color:#be2c2c}
+.source-status-dot.unavailable{background:#be2c2c}
+
+/* =========================================================
+   MOBILE PREVIEW / UNIVERSAL MOBILE LAYOUT
+   ========================================================= */
+.header-toolbar{display:flex;align-items:center;justify-content:flex-end;gap:8px;flex-wrap:wrap}
+.mobile-toggle{display:inline-flex;align-items:center;gap:6px;border:1px solid #dbe3ec;background:#fff;color:#475569;border-radius:8px;padding:6px 10px;font:700 11px Inter,sans-serif;cursor:pointer;transition:.15s ease}
+.mobile-toggle:hover{border-color:#cbd5e1;background:#f8fafc}
+.mobile-toggle.active{background:#0f172a;border-color:#0f172a;color:#fff}
+.mobile-toggle-icon{font-size:13px;line-height:1}
+
+body.mobile-preview{background:#e9eef5;overflow-x:auto;padding:22px 0}
+body.mobile-preview .page-container{width:390px;max-width:390px;min-height:100vh;margin:0 auto;padding:0 14px 26px;background:#f8fafc;border:1px solid #dbe3ec;border-radius:24px;box-shadow:0 18px 50px rgba(15,23,42,.14)}
+body.mobile-preview .dashboard-header{padding:20px 2px 18px}
+body.mobile-preview .header-content{display:flex;flex-direction:column;gap:16px}
+body.mobile-preview .header-text{max-width:none}
+body.mobile-preview .eyebrow{font-size:10px;margin-bottom:7px}
+body.mobile-preview .title-row{gap:9px}
+body.mobile-preview .title-volcano-icon{width:34px;height:34px;flex-basis:34px;border-radius:9px}
+body.mobile-preview .title-volcano-icon svg{width:22px;height:22px}
+body.mobile-preview .dashboard-header h1{font-size:27px;line-height:1.12}
+body.mobile-preview .header-description{max-width:none;margin-top:8px;font-size:12.5px;line-height:1.5}
+body.mobile-preview .header-actions{width:100%;min-width:0;align-items:stretch;gap:10px}
+body.mobile-preview .header-toolbar{justify-content:flex-start}
+body.mobile-preview .header-status{min-width:0;text-align:left}
+body.mobile-preview .status-label,.status-date-label{font-size:9px}
+body.mobile-preview .status-badge{font-size:12px;padding:7px 10px}
+body.mobile-preview .status-date{font-size:10px}
+body.mobile-preview .kpi-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-bottom:14px}
+body.mobile-preview .kpi-card{min-height:125px;padding:14px;border-radius:12px}
+body.mobile-preview .kpi-label{font-size:10.5px;margin-bottom:9px}
+body.mobile-preview .kpi-value{font-size:22px;line-height:1.1}
+body.mobile-preview .status-value{font-size:17px}
+body.mobile-preview .kpi-description{font-size:9.5px;line-height:1.45}
+body.mobile-preview .two-column-grid,body.mobile-preview .aviation-split-grid{grid-template-columns:1fr;gap:12px;margin-bottom:12px}
+body.mobile-preview .panel{margin-bottom:12px;padding:15px;border-radius:13px}
+body.mobile-preview .panel-header{gap:10px;margin-bottom:13px}
+body.mobile-preview .panel-header h2{font-size:16px}
+body.mobile-preview .panel-header p{font-size:11px}
+body.mobile-preview .chart-container{height:260px}
+body.mobile-preview .chart-small{height:220px}
+body.mobile-preview .passenger-panel,body.mobile-preview .health-panel{height:auto;overflow:visible}
+body.mobile-preview .passenger-human-chart{min-height:150px;gap:18px;padding:4px 2px}
+body.mobile-preview .passenger-category-header{gap:10px;margin-bottom:8px}
+body.mobile-preview .passenger-category-name{font-size:11.5px}
+body.mobile-preview .passenger-category-value{font-size:16px}
+body.mobile-preview .passenger-icons{gap:6px 5px}
+body.mobile-preview .passenger-human{width:13px;height:20px;flex-basis:13px}
+body.mobile-preview .passenger-scale{font-size:9.5px}
+body.mobile-preview .map-container{height:330px;border-radius:11px}
+body.mobile-preview .regional-summary-grid{grid-template-columns:1fr;gap:10px}
+body.mobile-preview .regional-summary-card{padding:13px;border-radius:11px}
+body.mobile-preview .regional-summary-card h3{font-size:13px}
+body.mobile-preview .regional-summary-card p,.region-status{font-size:10.5px}
+body.mobile-preview .timeline-item{padding-left:24px;padding-bottom:18px}
+body.mobile-preview .timeline-date{font-size:10.5px}
+body.mobile-preview .timeline-content h4{font-size:13px}
+body.mobile-preview .timeline-content p{font-size:11px;line-height:1.55}
+body.mobile-preview table{min-width:660px}
+body.mobile-preview thead th{font-size:9px;padding:9px}
+body.mobile-preview tbody td{font-size:11px;padding:11px 9px}
+body.mobile-preview .sources-panel{width:100%;overflow:visible}
+body.mobile-preview .source-list{grid-template-columns:1fr;gap:10px;width:100%}
+body.mobile-preview .source-card{width:100%;min-height:205px;height:auto;padding:15px 16px;border-radius:11px}
+body.mobile-preview .source-card-top{gap:10px;align-items:center}
+body.mobile-preview .source-badge{font-size:9.5px;padding:5px 7px}
+body.mobile-preview .source-status{font-size:9.5px;white-space:nowrap}
+body.mobile-preview .source-card-title{font-size:13.5px;line-height:1.42;margin-top:12px}
+body.mobile-preview .source-card-description{font-size:11px;line-height:1.55;margin-top:7px}
+body.mobile-preview .source-card-date{font-size:10px;margin-top:8px}
+body.mobile-preview .source-card-link{font-size:11.5px;padding-top:12px}
+body.mobile-preview .source-card-url{font-size:8.5px;line-height:1.35;white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;overflow-wrap:anywhere;margin-top:5px}
+body.mobile-preview .dashboard-footer{margin-top:24px;padding:24px 10px 30px}
+body.mobile-preview .footer-title{font-size:14px}
+body.mobile-preview .footer-subtitle,.footer-credit{font-size:11px}
+body.mobile-preview .footer-tech,.footer-note{font-size:9.5px}
+
+@media(max-width:600px){
+  .header-toolbar{justify-content:flex-start}
+  .mobile-toggle{font-size:10.5px}
+}
