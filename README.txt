@@ -23,3 +23,10 @@ Malaysia: The Star — Malaysia Airlines cancels 12 Jakarta flights after Anak K
 https://www.thestar.com.my/news/nation/2026/09/06/malaysia-airlines-cancels-12-jakarta-flights-after-anak-krakatau-eruption
 
 The previous Singapore Airlines fixed URL was removed because the page is no longer valid. The dashboard now treats the two news articles above as documented regional aviation references and keeps the NADMA/MetMalaysia page as a separate monitoring reference.
+
+
+UPDATE NOTE — 05 OCTOBER 2026
+The scraper is intentionally running in fixed trusted-reference mode. It re-fetches the curated references on every run and does not use search-engine discovery. The latest official activity-status evaluation in the trusted set is Badan Geologi / ESDM, effective 21 September 2026 at 18:30 WIB: Level II (Waspada).
+
+
+V15 updates: Indonesian source status translation, reference-aware source availability, and a wider/zoomed-out mobile map view.

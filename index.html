@@ -29,9 +29,15 @@
             </div>
 
             <div class="header-actions">
-                <div class="language-switch" aria-label="Language switcher">
-                    <button type="button" class="lang-button active" data-lang="en">EN</button>
-                    <button type="button" class="lang-button" data-lang="id">ID</button>
+                <div class="header-toolbar">
+                    <div class="language-switch" aria-label="Language switcher">
+                        <button type="button" class="lang-button active" data-lang="en">EN</button>
+                        <button type="button" class="lang-button" data-lang="id">ID</button>
+                    </div>
+                    <button type="button" id="mobileToggle" class="mobile-toggle" aria-pressed="false">
+                        <span class="mobile-toggle-icon" aria-hidden="true">▯</span>
+                        <span id="mobileToggleText" data-i18n="mobileView">Mobile view</span>
+                    </button>
                 </div>
                 <div class="header-status">
                     <span class="status-label" data-i18n="currentStatusLabel">CURRENT STATUS</span>
