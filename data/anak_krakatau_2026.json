@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "last_updated": "2026-10-09T03:18:48+00:00",
+        "last_updated": "2026-10-10T02:58:31+00:00",
         "last_updated_display": "05 October 2026, refresh run",
         "data_as_of": "05 October 2026",
         "latest_official_status_date": "21 September 2026, 18:30 WIB",
@@ -37,7 +37,7 @@
         "total_affected_flights": 2300,
         "total_affected_passengers": 270337,
         "temporarily_closed": {
-            "flights": 1397,
+            "flights": 2300,
             "passengers": 177579
         },
         "route_adjustment": {
