@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "last_updated": "2026-10-28T02:45:48+00:00",
+        "last_updated": "2026-10-29T03:06:17+00:00",
         "last_updated_display": "05 October 2026, refresh run",
         "data_as_of": "05 October 2026",
         "latest_official_status_date": "21 September 2026, 18:30 WIB",
@@ -168,8 +168,8 @@
             "source_method": "fixed_reference"
         },
         "malaysia": {
-            "status": "Monitoring",
-            "description": "Malaysia continued monitoring the potential regional ash impact from Anak Krakatau.",
+            "status": "Monitoring — low risk",
+            "description": "MetMalaysia continued monitoring the potential for Anak Krakatau volcanic ash to reach Malaysia; the referenced assessment described the current ash-arrival risk as low.",
             "lat": 3.139,
             "lng": 101.6869,
             "source_method": "fixed_reference"
@@ -287,7 +287,7 @@
             "description": "Malaysia monitoring and assessment of the potential for Anak Krakatau ash to reach Malaysia.",
             "date": "9 September 2026",
             "url": "https://www.nadma.gov.my/bi/media-en/news/7101-metmalaysia-anak-krakatau-ash-could-reach-malaysia-but-risk-remains-low",
-            "fetch_status": "UNAVAILABLE",
+            "fetch_status": "OK",
             "reference_type": "fixed_reference",
             "source_status": "official_reference"
         }
