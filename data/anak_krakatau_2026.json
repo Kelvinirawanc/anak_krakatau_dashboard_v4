@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "last_updated": "2026-10-30T03:10:11+00:00",
+        "last_updated": "2026-10-31T02:56:26+00:00",
         "last_updated_display": "05 October 2026, refresh run",
         "data_as_of": "05 October 2026",
         "latest_official_status_date": "21 September 2026, 18:30 WIB",
@@ -37,7 +37,7 @@
         "total_affected_flights": 2300,
         "total_affected_passengers": 270337,
         "temporarily_closed": {
-            "flights": 2300,
+            "flights": 1397,
             "passengers": 177579
         },
         "route_adjustment": {
@@ -224,7 +224,7 @@
             "description": "BNPB preparedness and local mitigation measures associated with Anak Krakatau activity.",
             "date": "10 September 2026",
             "url": "https://bnpb.go.id/berita/antisipasi-erupsi-gunung-anak-krakatau-bnpb-perkuat-kesiapsiagaan-di-lampung",
-            "fetch_status": "OK",
+            "fetch_status": "UNAVAILABLE",
             "reference_type": "fixed_reference",
             "source_status": "official_reference"
         },
